@@ -1,0 +1,181 @@
+/* ===== GLOBAL ===== */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* ===== NAVBAR (FINAL & FIXED) ===== */
+nav {
+    background: #2c3e50;
+    color: white;
+    padding: 15px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+nav h2 {
+    margin: 0;
+    font-size: 22px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    margin-left: 25px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 16px;
+}
+
+nav ul li a:hover {
+    color: orange;
+}
+
+/* ===== HOME HERO ===== */
+.hero {
+    height: 90vh;
+    background: url("https://images.unsplash.com/photo-1568605114967-8130f3a36994") center/cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+}
+
+.btn {
+    background: orange;
+    padding: 12px 20px;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+/* ===== ABOUT PAGE ===== */
+.about-container {
+    padding: 50px;
+}
+
+.about-card {
+    background: #f4f4f4;
+    padding: 40px;
+    border-radius: 12px;
+}
+
+/* Flex layout */
+.about-flex {
+    display: flex;
+    gap: 40px;
+    align-items: center;
+}
+
+/* Left image */
+.about-image img {
+    width: 380px;
+    border-radius: 12px;
+}
+
+/* Right text */
+.about-text {
+    flex: 1;
+}
+
+.about-text h2 {
+    margin-top: 0;
+}
+
+.points-list {
+    padding-left: 20px;
+}
+
+.points-list li {
+    margin-bottom: 12px;
+    line-height: 1.6;
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 768px) {
+    .about-flex {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .about-image img {
+        width: 100%;
+    }
+}
+.about-section-title {
+    font-size: 24px;
+    color: #2c3e50;
+    margin-bottom: 20px;
+    line-height: 1.4;
+}
+
+/* ===== ABOUT PAGE LAYOUT ===== */
+.about-container {
+    padding: 50px;
+}
+
+.about-card {
+    background: #f4f4f4;
+    padding: 40px;
+    border-radius: 12px;
+}
+
+.about-flex {
+    display: flex;
+    gap: 40px;
+    align-items: center;
+}
+
+.about-image img {
+    width: 380px;
+    border-radius: 12px;
+}
+
+.about-text {
+    flex: 1;
+}
+
+.points-list {
+    padding-left: 20px;
+}
+
+.points-list li {
+    margin-bottom: 10px;
+    line-height: 1.6;
+}
+
+/* Mobile responsive */
+@media (max-width: 768px) {
+    .about-flex {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .about-image img {
+        width: 100%;
+    }
+}
+.about-image img {
+    display: block;
+    width: 380px;
+    height: auto;
+    max-width: 100%;
+    border-radius: 12px;
+}
